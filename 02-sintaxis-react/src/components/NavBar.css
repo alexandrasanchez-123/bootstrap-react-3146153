@@ -1,0 +1,11 @@
+.barra{
+    background-color: rgb(138, 142, 196);
+    width: 50rem;
+    height: 3rem;
+    border-radius: 5rem;
+    display: flex;
+    gap: 2rem;
+    align-items: center;
+    margin: auto;
+    justify-content: space-between;
+}
