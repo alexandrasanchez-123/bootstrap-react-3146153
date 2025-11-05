@@ -2,18 +2,17 @@ import React from 'react'
 import "./Extencion.css"
 
 
-export const ExtensionCard = () => {
+export const ExtensionCard = ({cardTitle,cardImage, cardDescripton,}) => {
   return (
     <>
     <div>
-      <div>
-    <h1 className='title'>Card Extención</h1>
-    </div>
+     
 
     <div className='caja'>
-    <img className='' src="../public/imagen.png" alt="" />
-    <h1>DevLens</h1>
-   <p>Quickly inspect page layouts and visualize element boundaries.</p>
+    <img className='imagen' src={cardImage} alt="" />
+    <h1 className='title'>{cardTitle}</h1>
+   <p className='descrip'>{cardDescripton}</p>
+   <button className='boton'>Remove</button>
    </div>
 
    </div>

@@ -6,9 +6,65 @@ import { ExtensionCard } from './components/ExtensionCard'
 export const App = () => {
   return (
     <>
-      <NavBar/> 
-         < ExtensionCard/>
-      
+    
+          <NavBar/> 
+     <div className="containerCards">
+         < ExtensionCard  
+              cardTitle="DevLens" 
+              cardImage="../public/imagen.png" 
+              cardDescripton="Quickly inspect page layouts and visualize element boundaries."
+          />
+
+         < ExtensionCard  
+              cardTitle="StyleSpy" 
+              cardImage="../public/logo-style-spy.svg" 
+              cardDescripton="Instantly analyze and copy CSS from any webpage element."
+          />
+
+         < ExtensionCard  
+              cardTitle="SpeedBoost" 
+              cardImage="../public/logo-speed-boost.svg" 
+              cardDescripton="Optimizes browser resource usage to accelerate page loading."
+          />
+
+         < ExtensionCard  
+              cardTitle="JSONWizard" 
+              cardImage="../public/logo-json-wizard.svg" 
+              cardDescripton="Formats, validates, and prettifies JSON responses in-browser."
+          />
+
+         < ExtensionCard  
+              cardTitle="TabMaster Pro" 
+              cardImage="../public/logo-tab-master-pro.svg" 
+              cardDescripton="Organizes browser tabs into groups and sessions."
+          />
+
+         < ExtensionCard  
+              cardTitle="ViewportBuddy" 
+              cardImage="../public/logo-viewport-buddy.svg" 
+              cardDescripton="Simulates various screen resolutions directly within the browser."
+          />
+         < ExtensionCard  
+              cardTitle="Markup Notes" 
+              cardImage="../public/logo-markup-notes.svg" 
+              cardDescripton="Enables annotation and notes directly onto webpages for collaborative debugging."
+          />
+
+         < ExtensionCard  
+              cardTitle="GridGuides" 
+              cardImage="../public/logo-grid-guides.svg" 
+              cardDescripton="Overlay customizable grids and alignment guides on any webpage."
+          />
+
+         < ExtensionCard  
+              cardTitle="Palette Picker" 
+              cardImage="../public/logo-palette-picker.svg" 
+              cardDescripton="Instantly extracts color palettes from any webpage."
+          />
+    </div>
+    <h1>Teact + Bootstrap</h1>
+        
+    
     </>
   )
 }

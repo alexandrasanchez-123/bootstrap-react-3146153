@@ -1,19 +1,40 @@
-.title{
-    font-size: 1,5rem;
-    color: white;
-    left: 20rem;
-    margin-left: 8rem;
+.caja h1{
+    font-size:2rem;
+    margin-left: 10rem;
+    margin-top: -3rem;
+}
+.caja p{
+        font-size: 1rem;
+         color: #000000;
+        margin-top: 3rem;
+        margin-left: 7rem;
 }
 .caja{
     background-color: rgb(81, 85, 85);
     border-radius: 2rem;
-    width: 21rem;
+    width: 94%;
     height: 14rem;
-     margin-left: 10rem;
+    margin-top: 5rem;
+
 }
 .caja img{
-    margin-top: 1rem;
+   /*  margin-top: 1rem; */
     width: 5rem;
     border-radius: 1rem;
-    margin-left: 1rem;
+    margin-left: 3rem;
+    margin-top: 1rem;
+  
+}
+.caja{
+
+}
+.boton{
+    background-color: rgb(117, 122, 122) ;
+    border-radius: 10rem;
+    width: 5rem;
+    height: 2rem;
+     margin-left: 4rem;
+     margin-top: 1rem;
+     cursor: pointer;
+     
 }

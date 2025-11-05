@@ -16,7 +16,16 @@ h1,h2,h3,h4,h5,h6{
 
 }
 
-
 p{
   color: rgb(196,196,16);
+}
+
+.containerCards{
+  display: grid;
+  width: 100%;
+  max-width: 1500px;
+  margin: auto;
+  gap: 4rem;
+  flex-wrap: wrap;
+  grid-template-columns: 1fr 1fr 1fr;
 }
