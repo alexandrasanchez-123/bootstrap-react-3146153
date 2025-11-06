@@ -1,13 +1,15 @@
-import React from 'react'
+
 import "./App.css"
 import {NavBar} from './components/NavBar' 
 import { ExtensionCard } from './components/ExtensionCard'
+import { LoginForm } from "./components/LoginForm"
 
 export const App = () => {
   return (
     <>
     
-          <NavBar/> 
+          <NavBar/>
+          
      <div className="containerCards">
          < ExtensionCard  
               cardTitle="DevLens" 
@@ -61,9 +63,11 @@ export const App = () => {
               cardImage="../public/logo-palette-picker.svg" 
               cardDescripton="Instantly extracts color palettes from any webpage."
           />
+
     </div>
+    
     <h1>Teact + Bootstrap</h1>
-        
+        <LoginForm/> 
     
     </>
   )
