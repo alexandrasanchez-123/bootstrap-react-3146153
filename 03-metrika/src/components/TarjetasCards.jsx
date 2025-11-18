@@ -1,64 +1,59 @@
-import React from "react";
+
 import "../styles/TarjetasCards.css";
 
 export const TarjetasCards = () => {
-  const cards = [
-    { 
-      title: "About Us", 
-      icon: "bi-book", 
-      bgColor: "#5cb3a1", 
-      image: "/images/about.jpg" 
-    },
-    { 
-      title: "Our Team", 
-      icon: "bi-people", 
-      bgColor: "#69b190", 
-      image: "/images/team.jpg" 
-    },
-    { 
-      title: "Our Works", 
-      icon: "bi-images", 
-      bgColor: "#3aa1d8", 
-      image: "/images/works.jpg" 
-    },
-    { 
-      title: "Contacts", 
-      icon: "bi-geo-alt", 
-      bgColor: "#c05a78", 
-      image: "/images/contact.jpg" 
-    },
-    { 
-      title: "Resume", 
-      icon: "bi-download", 
-      bgColor: "#c25b47", 
-      image: "/images/resume.jpg" 
-    },
-    { 
-      title: "Blog", 
-      icon: "bi-pencil-square", 
-      bgColor: "#d87535", 
-      image: "/images/blog.jpg" 
-    },
-    { 
-      title: "Feedback", 
-      icon: "bi-envelope", 
-      bgColor: "#e29e35", 
-      image: "/images/feedback.jpg" 
-    },
-  ];
-
   return (
-    <div className="tarjetas-container">
-      {cards.map((card, index) => (
-        <div key={index} className="tarjeta" style={{ backgroundColor: card.bgColor }}>
-          <div className="imagen-container">
-            <img src={card.image} alt={card.title} className="imagen" />
+     <div className="tarjetas-container">
+
+      {/* 🟩 COLUMNA 1 */}
+      <div className="columna">
+        <div className="tarjeta-row">
+          <div className="tarjeta-mini" style={{ background: "#5cb3a1" }}>
+            <i className="bi bi-book icono"></i>
+            <h2>About Us</h2>
           </div>
-          <i className={`bi ${card.icon} icono`}></i>
-          <h2 className="titulo">{card.title}</h2>
-          <button className="boton">Ver más</button>
+
+          <div className="tarjeta-mini" style={{ background: "#69b190" }}>
+            <i className="bi bi-people icono"></i>
+            <h2>Our Team</h2>
+          </div>
+
+          <div className="tarjeta-large" style={{ background: "#c25b47" }}>
+            <i className="bi bi-download icono"></i>
+            <h2>Resume</h2>
+          </div>
         </div>
-      ))}
+      </div>
+
+      {/* 🟩 COLUMNA 2 */}
+      <div className="columna">
+        <div className="tarjeta-xl" style={{ background: "#3aa1d8" }}>
+          <i className="bi bi-images icono"></i>
+          <h2>Our Works</h2>
+        </div>
+      </div>
+
+      {/* 🟩 COLUMNA 3 */}
+      <div className="columna">
+        <div className="tarjeta-row">
+
+          <div className="tarjeta-large" style={{ background: "#c05a78" }}>
+            <i className="bi bi-geo-alt icono"></i>
+            <h2>Contacts</h2>
+          </div>
+
+          <div className="tarjeta-mini" style={{ background: "#d87535" }}>
+            <i className="bi bi-pencil-square icono"></i>
+            <h2>Blog</h2>
+          </div>
+
+          <div className="tarjeta-mini" style={{ background: "#e29e35" }}>
+            <i className="bi bi-envelope icono"></i>
+            <h2>Feedback</h2>
+          </div>
+
+        </div>
+      </div>
     </div>
   );
 };
