@@ -3,8 +3,23 @@ import "../styles/NavBar.css"
 
 export const NavBar = () => {
   return (
-     <nav className="navbar">
+    
+      <div className='navbar'>
+      
       <h2 className="navbar-title">Metrika</h2>
-    </nav>
+
+      <div className='iconos'>
+        <img src="../public/facebook.png" alt="" />
+        <img src="../public/google.png" alt="" />
+        <img src="../public/twitter.png" alt="" />
+        <img src="../public/behans.png" alt="" />
+        <img src="../public/LinkedIn.png" alt="" />
+      </div>
+
+    </div>
+     
+      
+    
+    
   )
 }

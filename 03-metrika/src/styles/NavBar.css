@@ -1,0 +1,34 @@
+.navbar {
+  width: 100%;
+  display: flex;
+  justify-content: center;  /* CENTRA el título en la barra */
+  align-items: center;
+  position: relative;        /* permite colocar iconos a la derecha */
+  padding: 10px 0;
+}
+
+/* TITULO */
+.navbar-title {
+  font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+  font-size: 2rem;
+  text-align: center;
+  margin: 0;
+}
+
+/* CONTENEDOR DE ICONOS */
+.iconos {
+  position: absolute;
+  right: 20px;     /* LOS ICONOS A LA DERECHA */
+  top: 50%;
+  transform: translateY(-50%);
+  display: flex;
+  gap: 12px;
+}
+
+/* ICONOS */
+.iconos img {
+  width: 28px;
+  height: 28px;
+  object-fit: contain;
+  cursor: pointer;
+}
