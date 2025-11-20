@@ -32,7 +32,7 @@ export const TarjetasCards = () => {
       <div className="columna">
         <div className="tarjeta-xl" style={{ background: "#3aa1d8" }}>
           <i className="bi bi-images icono"></i>
-          <img className="icono" src="../public/imagenes.png" alt="" />
+          <img className="icono1" src="../public/imagenes.png" alt="" />
           <h2>Our Works</h2>
         </div>
       </div>
@@ -49,13 +49,13 @@ export const TarjetasCards = () => {
 
           <div className="tarjeta-mini" style={{ background: "#d87535" }}>
             <i className="bi bi-pencil-square icono"></i>
-            <img className="icono" src="../public/libro1.png" alt="" />
+            <img className="icono" src="../public/lapiz (2).png" alt="" />
             <h2>Blog</h2>
           </div>
 
           <div className="tarjeta-mini" style={{ background: "#e29e35" }}>
             <i className="bi bi-envelope icono"></i>
-            <img className="icono" src="../public/libro1.png" alt="" />
+            <img className="icono" src="../public/postal.png" alt="" />
             <h2>Feedback</h2>
           </div>
 

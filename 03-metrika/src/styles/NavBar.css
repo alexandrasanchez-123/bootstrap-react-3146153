@@ -5,24 +5,27 @@
   align-items: center;
   position: relative;        /* permite colocar iconos a la derecha */
   padding: 10px 0;
+      margin-left: 17rem;
 }
 
 /* TITULO */
 .navbar-title {
   font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
-  font-size: 2rem;
-  text-align: center;
-  margin: 0;
+  font-size: 5rem;
+  margin-left: -64rem;
+ 
+  color:black ;
 }
 
 /* CONTENEDOR DE ICONOS */
 .iconos {
   position: absolute;
-  right: 20px;     /* LOS ICONOS A LA DERECHA */
+  right: 20px;
   top: 50%;
   transform: translateY(-50%);
   display: flex;
   gap: 12px;
+  margin-left: 10rem;
 }
 
 /* ICONOS */
