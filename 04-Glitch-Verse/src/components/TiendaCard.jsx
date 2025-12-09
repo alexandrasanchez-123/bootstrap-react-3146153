@@ -1,87 +1,168 @@
-import React from 'react'
-import "../Styles/Tienda.css"
+import React from "react";
 
 export const TiendaCard = () => {
   return (
-    <section className="tienda-container">
-<h2 className="titulo-destacados">PRODUCTOS DESTACADOS</h2>
+    <section
+      className="container d-flex flex-column align-items-center gap-5 py-5"
+    >
+      {/* Título */}
+      <h2
+        className="fw-bold text-center px-4 py-2 rounded-pill"
+        style={{ backgroundColor: "#a8d5c2", color: "#000", fontSize: "1.4rem" }}
+      >
+        PRODUCTOS DESTACADOS
+      </h2>
 
+      {/* Banner */}
+      <div
+        className="w-100 p-4 rounded d-flex align-items-center gap-3 shadow"
+        style={{ backgroundColor: "#cfe3f5", maxWidth: "1100px" }}
+      >
+        <img
+          src="../public/zapatos (2).png"
+          alt="Banner"
+          className="rounded"
+          style={{ width: "21%" }}
+        />
 
-<div className="banner-tienda">
-<img src="../public/zapatos (2).png" alt="Banner" className="banner-img" />
-<p className="banner-texto">
-"Glitch Verse es más que una tienda: es una experiencia distópica donde los cómics se viven en cada página y se visten en cada prenda. Desde camisetas, suéteres, vasos, libros y zapatos hasta nuestras exclusivas tabletas diseñadas solo para leer nuestros cómics… aquí todo está pensado para que entres al glitch y no quieras salir."
-</p>
+        <p className="m-0" style={{ width: "55%", color: "#333" }}>
+          "Glitch Verse es más que una tienda: es una experiencia distópica donde los cómics se viven en cada página y se visten en cada prenda. Desde camisetas, suéteres, vasos, libros y zapatos hasta nuestras exclusivas tabletas diseñadas solo para leer nuestros cómics… aquí todo está pensado para que entres al glitch y no quieras salir."
+        </p>
+      </div>
+
+      {/* Productos */}
+      <div
+        className="row w-100"
+        style={{ maxWidth: "1100px", cursor: "pointer" }}
+      >
+        {/* Producto 1 */}
+        <div className="col-12 col-sm-6 col-md-4 mb-4">
+          <div className="card text-center shadow-sm rounded-4 p-3">
+            <img
+              className="card-img-top"
+              style={{ width: "79%", margin: "3rem auto 0" }}
+              src="../public/camisa-blanca.png"
+              alt="Camiseta GlitchVerse"
+            />
+            <p className="mt-3 fw-semibold">Camiseta de seda Glitch Verse</p>
+            <p className="fw-bold">$40.000</p>
+          </div>
+        </div>
+
+        {/* Producto 2 */}
+        <div className="col-12 col-sm-6 col-md-4 mb-4">
+          <div
+            className="card text-center shadow rounded-4 p-3 border border-dark"
+          >
+            <img
+              className="card-img-top"
+              style={{ width: "79%" }}
+              src="../public/buso-blanco.png"
+              alt="Hoodie GlitchVerse"
+            />
+            <p className="mt-3 fw-semibold">Suéter de seda Glitch Verse</p>
+            <p className="fw-bold">$80.000</p>
+          </div>
+        </div>
+
+        {/* Producto 3 */}
+        <div className="col-12 col-sm-6 col-md-4 mb-4">
+          <div className="card text-center shadow-sm rounded-4 p-3">
+            <img
+              className="card-img-top"
+              style={{ width: "79%" }}
+              src="../public/cuaderno-blanco.png"
+              alt="Cuaderno GlitchVerse"
+            />
+            <p className="mt-3 fw-semibold">
+              Cuaderno 150 hojas Glitch Verse
+            </p>
+            <p className="fw-bold">$30.000</p>
+          </div>
+        </div>
+
+        {/* Producto 4 */}
+        <div className="col-12 col-sm-6 col-md-4 mb-4">
+          <div className="card text-center shadow-sm rounded-4 p-3">
+            <img
+              className="card-img-top"
+              style={{ width: "79%" }}
+              src="../public/cuaderno-negro.png"
+              alt="Cuaderno Negro GlitchVerse"
+            />
+            <p className="mt-3 fw-semibold">
+              Cuaderno Negro 150 hojas Glitch Verse
+            </p>
+            <p className="fw-bold">$30.000</p>
+          </div>
+        </div>
+
+        {/* Producto 5 */}
+        <div className="col-12 col-sm-6 col-md-4 mb-4">
+          <div
+            className="card text-center shadow rounded-4 p-3 border border-dark"
+          >
+            <img
+              className="card-img-top"
+              style={{ width: "79%" }}
+              src="../public/buso-negro.png"
+              alt="Hoodie GlitchVerse"
+            />
+            <p className="mt-3 fw-semibold">
+              Suéter Negro de seda Glitch Verse
+            </p>
+            <p className="fw-bold">$80.000</p>
+          </div>
+        </div>
+
+        {/* Producto 6 */}
+        <div className="col-12 col-sm-6 col-md-4 mb-4">
+          <div className="card text-center shadow-sm rounded-4 p-3">
+            <img
+              className="card-img-top"
+              style={{ width: "79%", margin: "3rem auto 0" }}
+              src="../public/camisa-negra.png"
+              alt="Camiseta GlitchVerse"
+            />
+            <p className="mt-3 fw-semibold">
+              Camiseta Negra de seda Glitch Verse
+            </p>
+            <p className="fw-bold">$40.000</p>
+          </div>
+        </div>
+
+        {/* Producto 7 */}
+        <div className="col-12 col-sm-6 col-md-4 mb-4">
+  <div className="card text-center shadow-sm rounded-4 p-3">
+    <img
+      className="card-img-top mx-auto d-block"
+      src="../public/termo.png"
+      alt="Termo GlitchVerse"
+      style={{ width: "60%", height: "auto" }}
+    />
+    <p className="mt-3 fw-semibold">
+      Termo edición especial Glitch Verse
+    </p>
+    <p className="fw-bold">$50.000</p>
+  </div>
 </div>
 
-
-{/* Productos */}
-<div className="productos-grid">
-{/* Producto 1 */}
-<div className="producto-card">
-<img className="imagen" src="../public/camisa-blanca.png" alt="Camiseta GlitchVerse" />
-<p className="producto-nombre">Camiseta de seda Glitch Verse</p>
-<p className="producto-precio">$40.000</p>
-</div>
-
-
-{/* Producto 2 */}
-<div className="producto-card seleccionado">
-<img src="../public/buso-blanco.png" alt="Hoodie GlitchVerse" />
-<p className="producto-nombre">Suéter de seda Glitch Verse</p>
-<p className="producto-precio">$80.000</p>
-</div>
-
-
-{/* Producto 3 */}
-<div className="producto-card">
-<img src="../public/cuaderno-blanco.png" alt="Cuaderno GlitchVerse" />
-<p className="producto-nombre">Cuaderno 150 hojas Glitch Verse</p>
-<p className="producto-precio">$30.000</p>
-</div>
-
-
-{/* Producto 4 */}
-<div className="producto-card">
-<img src="../public/cuaderno-negro.png" alt="Gorra GlitchVerse" />
-<p className="producto-nombre">Cuaderno Negro  150 hojas Glitch Verse</p>
-<p className="producto-precio">$30.000</p>
-</div>
-
-
-{/* Producto 5 */}
-<div className="producto-card seleccionado">
-<img src="../public/buso-negro.png" alt="Hoodie GlitchVerse" />
-<p className="producto-nombre">Suéter Negro de seda Glitch Verse</p>
-<p className="producto-precio">$80.000</p>
-</div>
-
-
-
-{/* Producto 6 */}
-<div className="producto-card">
-<img className="imagen" src="../public/camisa-negra.png" alt="Camiseta GlitchVerse" />
-<p className="producto-nombre">Camiseta Negra de seda Glitch Verse</p>
-<p className="producto-precio">$40.000</p>
-</div>
-
-
-{/* Producto 7 */}
-<div className="producto-card-1">
-<img src="../public/termo.png" alt="Poster GlitchVerse" />
-<p className="producto-nombre">Termo edición especial Glitch Verse</p>
-<p className="producto-precio">$50.000</p>
-</div>
-
-<div className="producto-card">
-<img className="tablet" src="../public/tablet.png" alt="Poster GlitchVerse" />
-<p className="producto-nombre">Tablet edición especial Glitch Verse</p>
-<p className="producto-precio">$150.000</p>
-</div>
-
-
-
-</div>
-</section>
-  )
-}
+        {/* Producto 8 */}
+        <div className="col-12 col-sm-6 col-md-4 mb-4">
+          <div className="card text-center shadow-sm rounded-4 p-3">
+            <img
+              className="card-img-top"
+              style={{ width: "79%", marginTop: "5rem" }}
+              src="../public/tablet.png"
+              alt="Tablet GlitchVerse"
+            />
+            <p className="mt-3 fw-semibold">
+              Tablet edición especial Glitch Verse
+            </p>
+            <p className="fw-bold">$150.000</p>
+          </div>
+        </div>
+      </div>
+    </section>
+  );
+};

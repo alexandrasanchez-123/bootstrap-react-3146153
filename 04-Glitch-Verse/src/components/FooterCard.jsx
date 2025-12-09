@@ -1,18 +1,30 @@
-import React from 'react'
-import "../Styles/Footer.css"
+import React from "react";
+
 export const FooterCard = () => {
   return (
-      <footer className="footer-container">
-
+    <footer
+      className="w-100 py-5"
+      style={{ backgroundColor: "#c7daea" }}
+    >
       {/* CONTENEDOR PRINCIPAL */}
-      <div className="footer-content">
-
+      <div
+        className="container d-grid"
+        style={{
+          maxWidth: "1100px",
+          gap: "40px",
+          gridTemplateColumns: "repeat(auto-fit, minmax(220px, 1fr))",
+        }}
+      >
         {/* Columna 1 */}
-        <div className="footer-column">
-          <h3>Tienda</h3>
-          <ul>
+        <div>
+          <h3 className="fw-bold text-center mb-3" style={{ fontSize: "1.4rem" }}>
+            Tienda
+          </h3>
+
+          <ul className="ps-3" style={{ cursor: "pointer", textDecoration: "underline dotted" }}>
             <li>Accesorias</li>
-            <ul className="sub-list">
+
+            <ul className="ps-3 mt-2" style={{ listStyle: "circle" }}>
               <li>Moda</li>
               <li>Mujer</li>
               <li>Hombre</li>
@@ -21,9 +33,12 @@ export const FooterCard = () => {
         </div>
 
         {/* Columna 2 */}
-        <div className="footer-column">
-          <h3>Links Importantes</h3>
-          <ul>
+        <div>
+          <h3 className="fw-bold text-center mb-3" style={{ fontSize: "1.4rem" }}>
+            Links Importantes
+          </h3>
+
+          <ul className="ps-3" style={{ cursor: "pointer", textDecoration: "underline dotted" }}>
             <li>Condiciones de uso</li>
             <li>Políticas de seguridad</li>
             <li>Políticas de privacidad</li>
@@ -31,25 +46,42 @@ export const FooterCard = () => {
         </div>
 
         {/* Redes sociales */}
-        <div className="footer-social">
-          <img src="../public/tij-tok.png" alt="tiktok" />
-          <img src="../public/insta.png" alt="instagram" />
-       
-          <img src="../public/facebook (2).png" alt="facebook" />
-        
-          <img src="../public/whass.png" alt="whatsapp" />
-         
-        </div>
+        <div className="d-flex justify-content-center align-items-center gap-4">
+          <img
+            src="../public/tij-tok.png"
+            alt="tiktok"
+            style={{ width: "50px", cursor: "pointer" }}
+          />
 
+          <img
+            src="../public/insta.png"
+            alt="instagram"
+            style={{ width: "50px", cursor: "pointer" }}
+          />
+
+          <img
+            src="../public/facebook (2).png"
+            alt="facebook"
+            style={{ width: "50px", cursor: "pointer" }}
+          />
+
+          <img
+            src="../public/whass.png"
+            alt="whatsapp"
+            style={{ width: "50px", cursor: "pointer" }}
+          />
+        </div>
       </div>
 
       {/* PARTE INFERIOR */}
-      <div className="footer-bottom">
+      <div
+        className="container mt-4 text-center"
+        style={{ maxWidth: "1100px", fontSize: "0.9rem", lineHeight: "1.5" }}
+      >
         <p>Políticas de seguridad</p>
         <p>©2025 - CleverPrototypes, LLC</p>
         <p>-Reservados todos los derechos.</p>
       </div>
-
     </footer>
-  )
-}
+  );
+};
