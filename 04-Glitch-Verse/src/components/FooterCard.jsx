@@ -46,7 +46,7 @@ export const FooterCard = () => {
         </div>
 
         {/* Redes sociales */}
-        <div className="d-flex justify-content-center align-items-center gap-4">
+        <div className="d-flex justify-content-center align-items-center gap-10">
           <img
             src="../public/tij-tok.png"
             alt="tiktok"
